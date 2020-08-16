@@ -126,7 +126,7 @@ class main():
 				if o == 5:
 					break
 			print("")
-
+ 
 	def print_data(self):
 		os.system("clear")
 		extra.banner()
