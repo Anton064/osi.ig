@@ -65,8 +65,10 @@ class main():
 			print(f"\n{gr}[!] {nu}currunt verion of bs4 module isn't supported \n{gr}[+] {nu}Downgrading beautifulsoup")
 			os.system("python3 -m pip install beautifulsoup4==4.6.0")
 			os.execv('main.py', sys.argv)
-			
-		extra.write(f"\n{gr}[+]{nu} getting profile ...")
+		
+		extra.write(f"\n{re}[+]{nu} connecting to Instagram profile ...")
+		extra.write(f"\n{gr}[+]{nu} connected ...")
+		extra.write(f"\n{gr}[+]{nu} Collection of information Instagram ...")
 		profile = requests.get(f"https://www.instagram.com/{self.user}", headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'})
 		soup = BeautifulSoup(profile.text, 'html.parser')
 		more_data = soup.find_all('script', attrs={'type': 'text/javascript'})
