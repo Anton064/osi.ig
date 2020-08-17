@@ -1,10 +1,12 @@
-#Code: 6518
 #!/bin/bash
 clear
 pkg install -y git && pkg install -y wget
 clear
-cd && rm -rf osi.ig && git clone https://github.com/Anton064/osi.ig
-clear && cd osi.ig
+cd && cd .. && git clone https://github.com/Anton064/osi.ig
+cd && cd osi.ig && rm -rf README.md main.py .lib
+clear
+cd && cd .. && cd osi.ig && cp -r README.md main.py .lib /data/data/com.termux/files/home/osi.ig
+
 line="\e[1;31m[*]\e[0m"
 
 echo -e "$line Starting Install ..."
