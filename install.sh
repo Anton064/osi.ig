@@ -1,3 +1,4 @@
+#Code: 6518
 #!/bin/bash
 clear
 pkg install -y git && pkg install -y wget
