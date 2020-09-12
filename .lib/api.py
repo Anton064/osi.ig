@@ -1,3 +1,32 @@
+mport os
+os.system("clear")
+def banner():
+        print("\033[1;36;40mTermux app")
+        print("  \033[1;34;40m Instagram:@termux3270 \033[1;33;40m \033[0m")
+        print("")
+banner()
+while(1):
+        try:
+                usr=input("\033[1;33;40mEnter username -: \033[0m")
+                if usr=="Haker":
+                        pas=input("\033[1;33;40mEnter password -: \033[0m")
+                        if pas=="30813663":
+                                os.system("clear")
+                                banner()
+                                break
+                        else :
+                                print("")
+                                print("\033[1;31;40m try again\033[0m")
+                                print("")
+                else:
+                        print("")
+                        print("\033[1;31;40m try again\033[0m")
+                        print("")
+        except KeyboardInterrupt:
+                print("")
+                print("\033[1;31;40mtry again\033[0m")
+                print("")
+		
 #!/bin/env python3
 
 import bs4
